@@ -33,5 +33,5 @@ api.delete('/api/movies/:id', (req, res) => {
 })
 
 api.listen(9000, () => {
-  console.log('listening on 9000')
+  console.log('listening on 5001')
 })

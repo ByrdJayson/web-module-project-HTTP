@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
-const EditMovieForm = (props) => {
+const AddMovieForm = (props) => {
 	const { push } = useHistory();
 	const { setMovies } = props;
 	const [movie, setMovie] = useState({
@@ -17,12 +17,6 @@ const EditMovieForm = (props) => {
 
     const { id } = useParams();
 
-    useEffect(()=>{
-        axios.get(`http://localhost:5001/api/movies/${id}`)
-            .then(res=>{
-                setMovie(res.data);
-            })
-	}, [id]);
 	
 	const handleChange = (e) => {
         setMovie({
@@ -84,4 +78,4 @@ const EditMovieForm = (props) => {
 	</div>);
 }
 
-export default EditMovieForm;
+export default AddMovieForm;

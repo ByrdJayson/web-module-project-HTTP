@@ -37,9 +37,9 @@ function remove(req, res, ctx) {
 }
 
 export const handlers = [
-  rest.get('http://localhost:9000/api/movies', getAll),
-  rest.get('http://localhost:9000/api/movies/:id', getById),
-  rest.post('http://localhost:9000/api/movies', create),
-  rest.put('http://localhost:9000/api/movies/:id', edit),
-  rest.delete('http://localhost:9000/api/movies/:id', remove)
+  rest.get('http://localhost:5001/api/movies', getAll),
+  rest.get('http://localhost:5001/api/movies/:id', getById),
+  rest.post('http://localhost:5001/api/movies', create),
+  rest.put('http://localhost:5001/api/movies/:id', edit),
+  rest.delete('http://localhost:5001/api/movies/:id', remove)
 ]
